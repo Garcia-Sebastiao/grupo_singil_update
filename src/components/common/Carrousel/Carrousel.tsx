@@ -1,5 +1,5 @@
 import { Swiper } from "swiper/react";
-import {  Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "./style.css";
