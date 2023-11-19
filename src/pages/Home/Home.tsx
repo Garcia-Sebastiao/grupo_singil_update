@@ -118,7 +118,7 @@ export function Home() {
         </div>
       </Container>
 
-      <Container className="flex-col gap-14">
+      <Container className="flex-col gap-14" id="services">
         <Animation position="fade-left">
           <Title
             label="Apresentamos a você os melhores serviços."
@@ -321,7 +321,7 @@ export function Home() {
 
       <Container>
         <div className="flex w-full xs:flex-wrap lg:flex-nowrap items-center bg-zinc-100">
-          <div className="xs:w-full lg:w-[530px] h-w-[530px]">
+          <div className="xs:w-full lg:w-[530px] xs:h-80 lg:h-full">
             <img
               src={directorImage}
               className="w-full h-full object-cover"
@@ -329,7 +329,7 @@ export function Home() {
             />
           </div>
 
-          <div className="flex-1 xs:px-6 xs:py-8 lg:py-0 md:px-14 flex flex-col items-start gap-6">
+          <div className="flex-1 xs:px-6 xs:py-8 lg:py-4 md:px-14 flex flex-col items-start gap-6">
             <span className="text-lg text-zinc-500 italic font-medium leading-relaxed">
               "Sinclesio Zacarias formou-se Bachelar of Arts In Business and
               International Languages na East London na cidade de Londes 9 anos

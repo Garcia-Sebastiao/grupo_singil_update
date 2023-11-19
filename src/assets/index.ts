@@ -47,6 +47,10 @@ import medicine from "./images/icons/medicine.svg";
 import ship from "./images/icons/ship.svg";
 import menu from "./images/icons/menu.svg";
 import menuBlack from "./images/icons/black_menu.svg";
+import closeBlack from "./images/icons/black_close.svg";
+import rightBlack from "./images/icons/black_right.svg";
+import techBlue from "./images/icons/tech_blue.svg";
+import medicineBlue from "./images/icons/medicine_blue.svg";
 
 // CLIENTS
 import client1 from "./images/clients/client-1.png";
@@ -75,6 +79,8 @@ import mapIllustration from "./images/map-illustration.svg";
 
 export {
   menu,
+  rightBlack,
+  closeBlack,
   menuBlack,
   mapIllustration,
   team1,
@@ -118,6 +124,8 @@ export {
   tech,
   ship,
   medicine,
+  medicineBlue,
+  techBlue,
   // CLIENTS
   client1,
   client2,

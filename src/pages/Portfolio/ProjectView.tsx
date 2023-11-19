@@ -1,4 +1,4 @@
-import { medicineImage } from "@/assets";
+import { medicineImage, rightBlack } from "@/assets";
 import Animation from "@/components/common/Animation";
 import Carrousel from "@/components/common/Carrousel/Carrousel";
 import { Title } from "@/components/common/Title/Title";
@@ -42,18 +42,18 @@ export function ProjectView() {
       </section>
 
       <Container className="flex-col py-32 gap-y-20">
-        <div className="flex items-center w-full justify-between xs:flex-wrap lg:flex-nowrap">
+        <div className="flex items-center gap-y-6 w-full justify-between xs:flex-wrap lg:flex-nowrap">
           <Animation position="fade-left">
             <Title label="Levantamento de cargas" className="max-w-xs" />
           </Animation>
 
           <Animation position="fade-up" className="max-w-sm">
-            <span className="text-zinc-500 max-w-sm leading-relaxed text-sm">
+            <p className="text-zinc-500 max-w-sm leading-relaxed text-sm xs:text-center md:text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et atque
               officia laborum, odit quos, quisquam saepe quaerat distinctio
               veniam placeat culpa dolor doloremque! Corporis obcaecati illo
               reprehenderit, explicabo fugiat laudantium.
-            </span>
+            </p>
           </Animation>
         </div>
 
@@ -64,6 +64,62 @@ export function ProjectView() {
             alt=""
           />
         </Animation>
+
+        <div className="w-full grid xs:grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+
+          <a href="#" className="flex flex-col gap-y-8 w-full">
+            <div className="flex items-center gap-4">
+              <img src={rightBlack} className="w-4" alt="" />
+              <h3 className="text-xl font-InterBold">Levantamento de Cargas</h3>
+            </div>
+
+            <div className="h-[1px] bg-zinc-300 w-full" />
+          </a>
+        </div>
       </Container>
 
       <section className="pt-36 ">

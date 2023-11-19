@@ -45,7 +45,7 @@ export function About() {
             initial={{ y: 200, opacity: 0.3 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="w-full h-96 2xl:h-[480px]"
+            className="w-full xs:h-48 md:h-96 2xl:h-[480px]"
           >
             <video
               src={video1}
