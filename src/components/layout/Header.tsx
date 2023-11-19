@@ -1,4 +1,4 @@
-import { chevronDown, closeBlack, closeIcon, menu, menuBlack } from "@/assets";
+import {  closeBlack, closeIcon, menu, menuBlack } from "@/assets";
 import { useEffect, useState } from "react";
 
 export function Header({ dark }: { dark?: boolean }) {

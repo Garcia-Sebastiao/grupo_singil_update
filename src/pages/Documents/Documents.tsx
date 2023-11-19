@@ -1,20 +1,10 @@
-import {
-  medicineBlue,
-  medicineImage,
-  rightArrow,
-  rightBlack,
-  rightIcon,
-  techBlue,
-} from "@/assets";
+import { medicineBlue, rightIcon, techBlue } from "@/assets";
 import Animation from "@/components/common/Animation";
-import Carrousel from "@/components/common/Carrousel/Carrousel";
 import { Title } from "@/components/common/Title/Title";
 import { Container } from "@/components/layout/Container";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { motion } from "framer-motion";
-import { FreeMode, Navigation, Pagination } from "swiper/modules";
-import { SwiperSlide } from "swiper/react";
 
 export function Documents() {
   return (
@@ -52,7 +42,10 @@ export function Documents() {
         <Title label="Documentos de serviços" />
 
         <div className="w-full grid xs:grid-cols-1 md:grid-cols-2 gap-8">
-          <Animation position="fade-up" className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200">
+          <Animation
+            position="fade-up"
+            className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200"
+          >
             <div className="flex w-full items-center gap-x-6">
               <img src={techBlue} className="w-10" alt="" />
               <h3 className="text-xl font-InterBold">Singil - introdução</h3>
@@ -71,7 +64,10 @@ export function Documents() {
             </button>
           </Animation>
 
-          <Animation position="fade-up" className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200">
+          <Animation
+            position="fade-up"
+            className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200"
+          >
             <div className="flex w-full items-center gap-x-6">
               <img src={techBlue} className="w-10" alt="" />
               <h3 className="text-xl font-InterBold">Singil - Starlink</h3>
@@ -90,7 +86,10 @@ export function Documents() {
             </button>
           </Animation>
 
-          <Animation position="fade-up" className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200">
+          <Animation
+            position="fade-up"
+            className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200"
+          >
             <div className="flex w-full items-center gap-x-6">
               <img src={medicineBlue} className="w-10" alt="" />
               <h3 className="text-xl font-InterBold">Singil - Medical</h3>
@@ -109,7 +108,10 @@ export function Documents() {
             </button>
           </Animation>
 
-          <Animation position="fade-up" className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200">
+          <Animation
+            position="fade-up"
+            className="p-8 rounded-md border-2 flex flex-col items-start gap-y-10 border-zinc-200"
+          >
             <div className="flex w-full items-center gap-x-6">
               <img src={techBlue} className="w-10" alt="" />
               <h3 className="text-xl font-InterBold">Singil - Technology</h3>
