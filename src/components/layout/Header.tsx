@@ -114,7 +114,7 @@ export function Header({ dark }: { dark?: boolean }) {
           </li>
           <li>
             <a
-              href=""
+              href="#contacts"
               className={`text-sm flex items-center gap-4 ${
                 dark ? "text-black" : "text-white"
               }`}

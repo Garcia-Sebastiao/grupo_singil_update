@@ -4,7 +4,7 @@ import { Container } from "./Container";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-zinc-100">
+    <footer id="contacts" className="w-full bg-zinc-100">
       <Container className="flex-col pb-20 gap-28">
         <div className="flex xs:flex-col md:flex-row gap-y-4 items-center justify-between xs:flex-wrap lg:flex-nowrap">
           <Title
