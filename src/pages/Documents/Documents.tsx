@@ -1,4 +1,11 @@
-import { doc, medicineBlue, rightIcon, techBlue } from "@/assets";
+import {
+  singilMedical,
+  singilIntroduction,
+  singilTech,
+  medicineBlue,
+  rightIcon,
+  techBlue,
+} from "@/assets";
 import Animation from "@/components/common/Animation";
 import { Modal } from "@/components/common/Modal/Modal";
 import { Title } from "@/components/common/Title/Title";
@@ -11,7 +18,8 @@ import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 
 export function Documents() {
-  const [openModal, setOpenModal] = useState<boolean>(true);
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const [doc, setDoc] = useState<string>("");
 
   return (
     <div className="w-full relative overflow-x-hidden">
@@ -23,7 +31,16 @@ export function Documents() {
           }}
         >
           <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-            <Viewer fileUrl={doc} plugins={[]} />
+            <Viewer
+              fileUrl={
+                doc == "medical"
+                  ? singilMedical
+                  : doc == "tech"
+                  ? singilTech
+                  : singilIntroduction
+              }
+              plugins={[]}
+            />
           </Worker>
         </div>
       </Modal>
@@ -77,7 +94,13 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6">
+            <button
+              onClick={() => {
+                setOpenModal(true);
+                setDoc("intro");
+              }}
+              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+            >
               Ler <img src={rightIcon} className="w-4" alt="" />
             </button>
           </Animation>
@@ -99,7 +122,13 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6">
+            <button
+              onClick={() => {
+                setOpenModal(true);
+                setDoc("starlink");
+              }}
+              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+            >
               Ler <img src={rightIcon} className="w-4" alt="" />
             </button>
           </Animation>
@@ -121,7 +150,13 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6">
+            <button
+              onClick={() => {
+                setOpenModal(true);
+                setDoc("medical");
+              }}
+              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+            >
               Ler <img src={rightIcon} className="w-4" alt="" />
             </button>
           </Animation>
@@ -143,7 +178,13 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6">
+            <button
+              onClick={() => {
+                setOpenModal(true);
+                setDoc("tech");
+              }}
+              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+            >
               Ler <img src={rightIcon} className="w-4" alt="" />
             </button>
           </Animation>

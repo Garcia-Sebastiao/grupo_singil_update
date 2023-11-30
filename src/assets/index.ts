@@ -78,10 +78,14 @@ import blog3 from "./images/blog/blog-3.jpg";
 import mapIllustration from "./images/map-illustration.svg";
 
 // import docs
-import doc from "./docs/doc.pdf";
+import singilIntroduction from "./docs/singil-introduction.pdf";
+import singilMedical from "./docs/singil-medical.pdf";
+import singilTech from "./docs/singil-tech.pdf";
 
 export {
-  doc,
+  singilIntroduction,
+  singilMedical,
+  singilTech,
   menu,
   rightBlack,
   closeBlack,
