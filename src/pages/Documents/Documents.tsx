@@ -94,15 +94,25 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button
-              onClick={() => {
-                setOpenModal(true);
-                setDoc("intro");
-              }}
-              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
-            >
-              Ler <img src={rightIcon} className="w-4" alt="" />
-            </button>
+            <div className="w-full flex items-center justify-between">
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                  setDoc("intro");
+                }}
+                className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+              >
+                Ler <img src={rightIcon} className="w-4" alt="" />
+              </button>
+
+              <a
+                href={singilIntroduction}
+                download="singil-introduction.pdf"
+                className="px-6 py-3 text-zinc-600 bg-zinc-200 hover:brightness-75 transition duration-150 rounded-md flex items-center gap-x-6"
+              >
+                <span className="text-sm font-poppinsMedium">Download</span>
+              </a>
+            </div>
           </Animation>
 
           <Animation
@@ -122,15 +132,25 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button
-              onClick={() => {
-                setOpenModal(true);
-                setDoc("starlink");
-              }}
-              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
-            >
-              Ler <img src={rightIcon} className="w-4" alt="" />
-            </button>
+            <div className="w-full flex items-center justify-between">
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                  setDoc("starlink");
+                }}
+                className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+              >
+                Ler <img src={rightIcon} className="w-4" alt="" />
+              </button>
+
+              <a
+                href={""}
+                download="singil-starlink.pdf"
+                className="px-6 py-3 text-zinc-600 bg-zinc-200 hover:brightness-75 transition duration-150 rounded-md flex items-center gap-x-6"
+              >
+                <span className="text-sm font-poppinsMedium">Download</span>
+              </a>
+            </div>
           </Animation>
 
           <Animation
@@ -150,15 +170,25 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button
-              onClick={() => {
-                setOpenModal(true);
-                setDoc("medical");
-              }}
-              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
-            >
-              Ler <img src={rightIcon} className="w-4" alt="" />
-            </button>
+            <div className="w-full flex items-center justify-between">
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                  setDoc("medical");
+                }}
+                className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+              >
+                Ler <img src={rightIcon} className="w-4" alt="" />
+              </button>
+
+              <a
+                href={singilMedical}
+                download="singil-medical.pdf"
+                className="px-6 py-3 text-zinc-600 bg-zinc-200 hover:brightness-75 transition duration-150 rounded-md flex items-center gap-x-6"
+              >
+                <span className="text-sm font-poppinsMedium">Download</span>
+              </a>
+            </div>
           </Animation>
 
           <Animation
@@ -178,15 +208,25 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <button
-              onClick={() => {
-                setOpenModal(true);
-                setDoc("tech");
-              }}
-              className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
-            >
-              Ler <img src={rightIcon} className="w-4" alt="" />
-            </button>
+            <div className="w-full flex items-center justify-between">
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                  setDoc("tech");
+                }}
+                className="px-6 py-3 text-white bg-colors-primary-color rounded-md flex items-center gap-x-6"
+              >
+                Ler <img src={rightIcon} className="w-4" alt="" />
+              </button>
+
+              <a
+                href={singilTech}
+                download="singil-technology.pdf"
+                className="px-6 py-3 text-zinc-600 bg-zinc-200 hover:brightness-75 transition duration-150 rounded-md flex items-center gap-x-6"
+              >
+                <span className="text-sm font-poppinsMedium">Download</span>
+              </a>
+            </div>
           </Animation>
         </div>
       </Container>
