@@ -77,7 +77,11 @@ import blog3 from "./images/blog/blog-3.jpg";
 
 import mapIllustration from "./images/map-illustration.svg";
 
+// import docs
+import doc from "./docs/doc.pdf";
+
 export {
+  doc,
   menu,
   rightBlack,
   closeBlack,

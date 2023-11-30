@@ -1,14 +1,32 @@
-import { medicineBlue, rightIcon, techBlue } from "@/assets";
+import { doc, medicineBlue, rightIcon, techBlue } from "@/assets";
 import Animation from "@/components/common/Animation";
+import { Modal } from "@/components/common/Modal/Modal";
 import { Title } from "@/components/common/Title/Title";
 import { Container } from "@/components/layout/Container";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
 export function Documents() {
+  const [openModal, setOpenModal] = useState<boolean>(true);
+
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full relative overflow-x-hidden">
+      <Modal onClose={() => setOpenModal(false)} isOpen={openModal}>
+        <div
+          style={{
+            border: "1px solid rgba(0, 0, 0, 0.3)",
+            height: "750px",
+          }}
+        >
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+            <Viewer fileUrl={doc} plugins={[]} />
+          </Worker>
+        </div>
+      </Modal>
       <section className="w-full xs:h-screen md:h-[90vh] bg-colors-primary-color lg:h-screen flex flex-col relative">
         <Header />
 

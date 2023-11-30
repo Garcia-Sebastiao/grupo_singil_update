@@ -170,7 +170,7 @@ export function About() {
           </span>
 
           <div className="flex items-center gap-4">
-            <button className="text-white bg-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200">
+            <button className="text-white border-colors-primary-color border-2 bg-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200">
               Eficiência
             </button>
 

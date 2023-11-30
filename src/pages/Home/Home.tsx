@@ -241,7 +241,7 @@ export function Home() {
       <Container className="bg-colors-primary-color mt-32 py-32 flex-col gap-32">
         <Animation position="fade-left">
           <Title
-            label="Expandindoa nacionalmente marcando industrias."
+            label="Expandindo nacionalmente marcando industrias."
             className="leading-tight max-w-2xl text-white"
           />
         </Animation>
@@ -250,7 +250,7 @@ export function Home() {
           position="zoom-in-up"
           className="w-full flex items-center justify-center"
         >
-          <img src={mapIllustration} alt="" className="opacity-50 lg:w-[90%]" />
+          <img src={mapIllustration} alt="" className="opacity-50 lg:w-full" />
         </Animation>
 
         <div className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-28">

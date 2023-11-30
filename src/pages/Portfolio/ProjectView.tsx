@@ -12,7 +12,7 @@ import { SwiperSlide } from "swiper/react";
 export function ProjectView() {
   return (
     <div className="-full overflow-x-hidden">
-      <section className="w-full xs:h-screen md:h-[90vh] bg-colors-primary-color lg:h-screen flex flex-col relative">
+      <section className="w-full xs:h-screen md:h-[70vh] bg-colors-primary-color lg:h-[70] flex flex-col relative">
         <Header />
 
         <div className="relative z-10 flex-1 w-full flex flex-col xs:justify-center lg:justify-end xs:px-12 md:px-24 py-32 2xl:px-40">
@@ -47,8 +47,8 @@ export function ProjectView() {
             <Title label="Levantamento de cargas" className="max-w-xs" />
           </Animation>
 
-          <Animation position="fade-up" className="max-w-sm">
-            <p className="text-zinc-500 max-w-sm leading-relaxed text-sm xs:text-center md:text-left">
+          <Animation position="fade-up">
+            <p className="text-zinc-500 xs:max-w-sm md:max-w-full lg:max-w-sm leading-relaxed text-sm xs:text-center md:text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et atque
               officia laborum, odit quos, quisquam saepe quaerat distinctio
               veniam placeat culpa dolor doloremque! Corporis obcaecati illo
