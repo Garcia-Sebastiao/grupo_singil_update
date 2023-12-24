@@ -1,6 +1,9 @@
 import { facebookIcon, instagramIcon, linkedinIcon, rightIcon } from "@/assets";
 import { Title } from "../common/Title/Title";
 import { Container } from "./Container";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { FiPhone } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
 
 export function Footer() {
   return (
@@ -31,6 +34,24 @@ export function Footer() {
             <span className="max-w-xs text-zinc-500 leading-relaxed text-sm">
               Grupo Singil está aqui para atender às suas necessidades com um
               amplo espectro de serviços especializados.
+            </span>
+
+            <a
+              className="max-w-xs flex items-start gap-x-4 text-zinc-500 leading-relaxed font-semibold text-sm"
+              href="https://maps.app.goo.gl/Fyyhv7DQxFfMkEiy6"
+            >
+              <HiOutlineLocationMarker className="text-zinc-500 text-lg" />
+              Praia do bispo, Tv. 2 Casa Nº 5, Luanda, Angola
+            </a>
+
+            <span className="max-w-xs flex items-start gap-x-4 text-zinc-500 leading-relaxed font-semibold text-sm">
+              <FiPhone className="text-zinc-500 text-lg" />
+              931 176 000 - 927 998 560 - 222 712 797
+            </span>
+
+            <span className="max-w-xs flex items-start gap-x-4 text-zinc-500 leading-relaxed font-semibold text-sm">
+              <AiOutlineMail className="text-zinc-500 text-lg" />
+              dp.comercial@gruposingil.com  geral@gruposingil.com
             </span>
           </div>
 

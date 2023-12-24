@@ -31,20 +31,26 @@ export function Home() {
           <div className="w-full justify-between flex items-center md:flex-wrap lg:flex-row xs:flex-col gap-y-8">
             <motion.h1
               initial={{ x: -200, opacity: 0.3 }}
-              whileInView={{ x: 0,  opacity: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
               className="xs:text-4xl md:text-6xl xs:text-center lg:text-left max-w-4xl text-white font-InterSemiBold leading-tight"
             >
               Atendemos às suas necessidades com serviços especializados.
             </motion.h1>
 
-            <motion.span initial={{ x: 200, opacity: 0.3 }}
-              whileInView={{ x: 0,  opacity: 1 }}
-              transition={{ duration: 0.3 }} className="text-sm xs:text-center lg:text-left leading-loose text-zinc-300 max-w-sm text-justify">
+            <motion.span
+              initial={{ x: 200, opacity: 0.3 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="text-sm xs:text-center lg:text-left leading-loose text-zinc-300 max-w-lg text-justify"
+            >
               Seja você uma empresa do setor marítimo, uma instituição de saúde
               ou uma entidade tecnológica, o Grupo Singil está aqui para atender
               às suas necessidades com um amplo espectro de serviços
-              especializados.
+              especializados. Desde a nossa fundação, temos nos dedicado a
+              oferecer soluções de excelência, com profissionalismo e
+              comprometimento, sempre buscando superar as expectativas dos
+              nossos clientes.
             </motion.span>
           </div>
         </div>
@@ -64,7 +70,9 @@ export function Home() {
             <h4 className="text-2xl font-InterSemiBold">Nossa Visão</h4>
 
             <span className="text-sm max-w-md text-zinc-300 md:text-left xs:text-center leading-relaxed">
-              Os nossos clientes a tornarem-se organizações de grande desempenho
+              Trabalhar arduamente para continuarmos sendo uma empresa de
+              referência em Angola, fornecendo serviços logísticos aos
+              transportes marítimos, na medicina e em tecnologia
             </span>
             <a
               href="#"
@@ -83,9 +91,10 @@ export function Home() {
             <h4 className="text-2xl font-InterSemiBold">Nossa Missão</h4>
 
             <span className="text-sm max-w-md text-zinc-300 md:text-left xs:text-center leading-relaxed">
-              A parceria partilha com o sseus clientes uma experiente equipa de
-              especialistas e proporciona aos clientes, serviços de elevada
-              qualidade e tendo prestado a empresas.
+              A nossa missão é de crescer cada vez mais em equipe, mostrando
+              que, com amor pelo trabalho, e uma relação de valorização dos
+              funcionários e clientes, chegar mais distante em todos os nossos
+              sectores de actuação.
             </span>
             <a
               href="#"
@@ -104,8 +113,10 @@ export function Home() {
             <h4 className="text-2xl font-InterSemiBold">Nossos Valores</h4>
 
             <span className="text-sm max-w-md text-zinc-300 md:text-left xs:text-center leading-relaxed">
-              O grupo não s+o garante qualidade certificada dos seus serviços,
-              mas também o cumprimento rigor dos prazos acordados.
+              Com uma política de valorizar as pessoas , de trabalhar duro, de
+              transparência, de respeito e de sempre buscar novas oportunidades
+              para o crescimento da empresa. Os nossos valores são similares ao
+              de uma família.
             </span>
             <a
               href="#"
@@ -121,8 +132,8 @@ export function Home() {
       <Container className="flex-col gap-14" id="services">
         <Animation position="fade-left">
           <Title
-            label="Apresentamos a você os melhores serviços."
-            className="leading-tight max-w-xl"
+            label="Aproveitamos a oportunidade para lhe apresentar os nossos serviços."
+            className="leading-tight max-w-3xl"
           />
         </Animation>
 
@@ -378,7 +389,10 @@ export function Home() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <a href="/project_view/1" className="text-xl font-InterSemiBold">
+                <a
+                  href="/project_view/1"
+                  className="text-xl font-InterSemiBold"
+                >
                   Levantamento de cargas
                 </a>
 
@@ -403,7 +417,10 @@ export function Home() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <a href="/project_view/1" className="text-xl font-InterSemiBold">
+                <a
+                  href="/project_view/1"
+                  className="text-xl font-InterSemiBold"
+                >
                   Levantamento de cargas
                 </a>
 
@@ -428,7 +445,10 @@ export function Home() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <a href="/project_view/1" className="text-xl font-InterSemiBold">
+                <a
+                  href="/project_view/1"
+                  className="text-xl font-InterSemiBold"
+                >
                   Levantamento de cargas
                 </a>
 

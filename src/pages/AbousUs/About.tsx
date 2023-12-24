@@ -10,8 +10,11 @@ import { Pagination, FreeMode, Navigation } from "swiper/modules";
 import { clients } from "@/infra/clinets";
 import { motion } from "framer-motion";
 import Animation from "@/components/common/Animation";
+import { useState } from "react";
 
 export function About() {
+  const [option, setOption] = useState(0);
+
   return (
     <div className="w-full overflow-x-hidden">
       <section className="w-full xs:h-screen md:h-[90vh] lg:h-screen flex flex-col relative">
@@ -124,23 +127,18 @@ export function About() {
 
             <Animation position="fade-left">
               <p className=" text-zinc-500 leading-relaxed max-w-2xl">
-                Grupo Singil que foi iniciado em 2012. Somos empresa de renome
-                na prestação de serviços marítimos em Angola. Tendo servido mais
-                de 2000 navios em Luanda e Cabinda. Desejo aproveitar esta
-                oportunidade para informá-lo sobre nossos serviços e como eles
-                podem ser úteis para sua empresa.
+                Grupo Singil que foi fundado em 2012 por Sinclésio Zacarias.
+                Somos empresa de renome na prestação de serviços marítimos em
+                Angola. Tendo servido mais de 2500 navios em Luanda, Soyo e
+                Cabinda.
               </p>
             </Animation>
 
             <Animation position="fade-left">
               <p className="text-zinc-500 leading-relaxed max-w-2xl">
-                A nossa visão é continuar a ser uma dos 10 empresas de
-                referência em Angola, prestando serviços logísticos a navios e
-                transportes sólidos e líquidos serviços de coleta de lixo
-                urbano. Na província de Cabinda, recentemente recebeu a
-                autorização privilegiada de ser o única empresa a fornecer os
-                itens acima mencionados serviços e por estar localizado no porto
-                de Cabinda.
+                Após fundação do Grupo Singil, Sinclésio Zacarias dedicou-se
+                então em fazer crescer a empresa nas funções realizadas,
+                agarrando todas as oportunidades do sector marítimo em Angola
               </p>
             </Animation>
 
@@ -162,36 +160,75 @@ export function About() {
           position="fade-right"
           className="flex w-full items-center gap-8 justify-between xs:flex-wrap lg:flex-nowrap"
         >
-          <span className="max-w-3xl xs:text-center md:text-left leading-relaxed">
-            Acreditamos que nossa parceria pode beneficiar a sua empresa para
-            facilitar o seu actividades marítimas em Angola. O nosso grupo não
-            só garante a qualidade certificada dos seus serviços, mas também o
-            estrito cumprimento do acordado prazos.
-          </span>
+          {option == 0 ? (
+            <Animation
+              position="fade-left"
+              className="flex w-full items-center gap-8 justify-between xs:flex-wrap lg:flex-nowrap"
+            >
+              <span className="max-w-3xl xs:text-center md:text-left leading-relaxed">
+                Acreditamos que nossa parceria pode beneficiar a sua empresa
+                para facilitar o seu actividades marítimas em Angola. O nosso
+                grupo não só garante a qualidade certificada dos seus serviços,
+                mas também o estrito cumprimento do acordado prazos.
+              </span>
+            </Animation>
+          ) : (
+            <Animation
+              position="fade-left"
+              className="flex w-full items-center gap-8 justify-between xs:flex-wrap lg:flex-nowrap"
+            >
+              <span className="max-w-3xl xs:text-center md:text-left leading-relaxed">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Numquam accusantium aut, in iste laboriosam reiciendis. Nihil
+                minus illum, sit sint tempore fugit officia officiis enim
+                adipisci quod nisi excepturi quia!
+              </span>
+            </Animation>
+          )}
 
           <div className="flex items-center gap-4">
-            <button className="text-white border-colors-primary-color border-2 bg-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200">
+            <button
+              onClick={() => setOption(0)}
+              className="text-white border-colors-primary-color border-2 bg-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200"
+            >
               Eficiência
             </button>
 
-            <button className="text-colors-primary-color border-2 border-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200">
+            <button
+              onClick={() => setOption(1)}
+              className="text-colors-primary-color border-2 border-colors-primary-color rounded-md px-8 py-4 hover:bg-colors-primary-color hover:text-white focus:bg-colors-primary-color focus:text-white transition duration-200"
+            >
               Preços
             </button>
           </div>
         </Animation>
 
-        <div className="w-full grid xs:grid-cols-1 md:grid-cols-3 gap-6">
-          <Animation position="fade-up" className="col-span-2 h-96">
-            <img src={feature1} className="w-full h-full object-cover" alt="" />
-          </Animation>
+        {option == 0 ? (
+          <div className="w-full grid xs:grid-cols-1 md:grid-cols-3 gap-6">
+            <Animation position="fade-up" className="col-span-2 h-96">
+              <img
+                src={feature1}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </Animation>
 
-          <Animation
-            position="fade-up"
-            className="xs:col-span-2 md:col-span-1 h-96"
-          >
+            <Animation
+              position="fade-up"
+              className="xs:col-span-2 md:col-span-1 h-96"
+            >
+              <img
+                src={feature1}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </Animation>
+          </div>
+        ) : (
+          <Animation position="fade-up" className="w-full h-96">
             <img src={feature1} className="w-full h-full object-cover" alt="" />
           </Animation>
-        </div>
+        )}
       </Container>
 
       <Container className="pt-32 flex-col items-start gap-12">
