@@ -94,7 +94,7 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-stretch gap-x-4 justify-between">
               <button
                 onClick={() => {
                   setOpenModal(true);
@@ -132,7 +132,7 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-stretch gap-4 justify-between">
               <button
                 onClick={() => {
                   setOpenModal(true);
@@ -170,7 +170,7 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-stretch gap-4 justify-between">
               <button
                 onClick={() => {
                   setOpenModal(true);
@@ -208,7 +208,7 @@ export function Documents() {
 
             <div className="w-full h-[1px] bg-zinc-300" />
 
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-stretch gap-4 justify-between">
               <button
                 onClick={() => {
                   setOpenModal(true);
